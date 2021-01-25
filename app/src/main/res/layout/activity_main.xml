@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
 
@@ -18,34 +19,48 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Le Resto" />
+            android:text="Le French Exquis"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:fontFamily="serif"
+            android:textColor="#FFC107"
+            android:textIsSelectable="false" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="90dp"
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
+                android:textColor="#FFC107"
                 android:onClick="EntreCallBack"
-                android:text="Entree"
-                app:backgroundTint="#8BC34A"></Button>
+                android:text="Entrées"
+
+                app:backgroundTint="@color/black"></Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:onClick="PlatCallBack"
-                android:text="Plat"
-                app:backgroundTint="#8BC34A"></Button>
+                android:text="Plats"
+                android:textColor="#FFC107"
+                app:backgroundTint="@color/black"></Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="serif"
                 android:onClick="DessertCallBack"
-                android:text="Dessert"
-                app:backgroundTint="#8BC34A"></Button>
+                android:text="Desserts"
+                android:textColor="#FFC107"
+                app:backgroundTint="@color/black"></Button>
         </LinearLayout>
 
     </LinearLayout>
