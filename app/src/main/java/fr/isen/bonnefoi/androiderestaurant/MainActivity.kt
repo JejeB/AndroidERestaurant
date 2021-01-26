@@ -16,21 +16,21 @@ class MainActivity : AppCompatActivity() {
         val mytoast = Toast.makeText(this.applicationContext,"Entrées",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, EntreeActivity::class.java)
+            Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Entrées")
         )
     }
     fun PlatCallBack(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"Plats",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, PlatsActivity::class.java)
+                Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Plats")
         )
     }
     fun DessertCallBack(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"Desserts",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, DessertsActivity::class.java)
+                Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Desserts")
         )
     }
 
