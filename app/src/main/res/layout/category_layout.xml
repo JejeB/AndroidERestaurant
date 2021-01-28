@@ -20,5 +20,12 @@
             android:fontFamily="serif"
             android:text="Les Entrées :"
             android:textColor="#FFC107" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Recycle"
+
+        />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
