@@ -13,24 +13,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun EntreCallBack(view: View?){
-        val mytoast = Toast.makeText(this.applicationContext,"Entrées",Toast.LENGTH_SHORT)
+        val mytoast = Toast.makeText(this,"Entrées",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Entrées")
+            Intent(this, CategoryActivity::class.java).putExtra("title","Entrées")
         )
     }
     fun PlatCallBack(view: View?){
-        val mytoast = Toast.makeText(this.applicationContext,"Plats",Toast.LENGTH_SHORT)
+        val mytoast = Toast.makeText(this,"Plats",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-                Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Plats")
+                Intent(this, CategoryActivity::class.java).putExtra("title","Plats")
         )
     }
     fun DessertCallBack(view: View?){
-        val mytoast = Toast.makeText(this.applicationContext,"Desserts",Toast.LENGTH_SHORT)
+        val mytoast = Toast.makeText(this,"Desserts",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-                Intent(applicationContext, CategoryActivity::class.java).putExtra("title","Desserts")
+                Intent(this, CategoryActivity::class.java).putExtra("title","Desserts")
         )
     }
 

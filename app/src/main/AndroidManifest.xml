@@ -12,6 +12,7 @@
         android:theme="@style/Theme.AndroidERestaurant"
         android:usesCleartextTraffic="true">
         <activity android:name=".CategoryActivity"/>
+        <activity android:name=".ZoomActivity"/>
         <activity android:name=".PlatsActivity"/>
         <activity android:name=".DessertsActivity"/>
         <activity android:name=".MainActivity">
@@ -22,6 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

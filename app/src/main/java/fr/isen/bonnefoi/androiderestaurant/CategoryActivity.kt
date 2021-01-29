@@ -47,9 +47,10 @@ class CategoryActivity: AppCompatActivity() {
                     val rep = parser.fromJson(response["data"].toString(), Array<Data>::class.java)
                    dataRecycler = rep[this.catnumber];
                     //System.out.println(this.CAT)
+                    Log.i("json","Response data : ${dataRecycler.items}")
                     Log.i("json","Response is: $response")
                     val foodRecycler = findViewById<RecyclerView>(R.id.Recycle)
-                    foodRecycler.adapter = CategoryAdaptater(dataRecycler.items)
+                    foodRecycler.adapter = CategoryAdaptater(dataRecycler.items,this)
                     foodRecycler.layoutManager = LinearLayoutManager(this)
 
                     foodRecycler.isVisible = true
@@ -61,5 +62,3 @@ class CategoryActivity: AppCompatActivity() {
 
     }
 }
-
-
