@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
 
         <androidx.viewpager.widget.ViewPager
@@ -17,16 +18,25 @@
             android:layout_height="200dp"
             android:id="@+id/imageCarousel"
             android:scaleType="centerCrop"
-            />
+            >
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/border3" />
 
         <TextView
             android:id="@+id/nom_plat"
-            android:layout_width="393dp"
+            android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/dynalight"
+            android:padding="10dp"
             android:text=" Le nom du plat "
             android:textColor="#FFC107"
             android:textSize="22sp"
@@ -38,10 +48,11 @@
             android:id="@+id/ingredients"
             android:layout_width="389dp"
             android:layout_height="321dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:padding="10dp"
             android:layout_marginRight="16dp"
             android:fontFamily="@font/dynalight"
             android:text="ingredients1,ingredient2"
