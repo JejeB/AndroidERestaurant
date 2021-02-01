@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.NumberPicker
 import androidx.viewpager.widget.PagerAdapter
 import com.squareup.picasso.Picasso
 import java.util.*
@@ -22,20 +23,17 @@ class CaroselAdpatater(context: Context, images: List<String>): PagerAdapter() {
         return images.size
     }
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        // inflating
-        val itemView: View = layout.inflate(R.layout.img_layout, container, false)
 
-        // referencing the image view from the item.xml file
+        val itemView: View = layout.inflate(R.layout.img_layout, container, false)
         val imageView: ImageView = itemView.findViewById<ImageView>(R.id.imageLayout)
 
 
-        // setting the image in the imageView
-        val picasso = Picasso.get()
+        val pablo = Picasso.get()
         if(images[position].isNotEmpty()){
-            picasso.load(images[position]).into(imageView)
+            pablo.load(images[position]).into(imageView)
         }
 
-        // Adding the View
+
         Objects.requireNonNull(container).addView(itemView)
         return itemView
     }

@@ -9,26 +9,23 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/dynalight"
             android:text="Le French Exquis"
             android:textAlignment="center"
-            android:textColor="#FFC107"
+            android:textColor="@color/gold"
             android:textIsSelectable="false"
             android:textSize="30dp" />
 
         <ImageView
-            android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="29dp"
             android:layout_marginTop="20dp"
@@ -48,7 +45,7 @@
                 android:fontFamily="@font/dynalight"
                 android:onClick="EntreCallBack"
                 android:text="Entrées"
-                android:textColor="#FFC107"
+                android:textColor="@color/gold"
 
                 app:backgroundTint="@color/black"></Button>
 
@@ -58,7 +55,7 @@
                 android:fontFamily="@font/dynalight"
                 android:onClick="PlatCallBack"
                 android:text="Plats"
-                android:textColor="#FFC107"
+                android:textColor="@color/gold"
                 app:backgroundTint="@color/black"></Button>
 
             <Button
@@ -67,7 +64,7 @@
                 android:fontFamily="@font/dynalight"
                 android:onClick="DessertCallBack"
                 android:text="Desserts"
-                android:textColor="#FFC107"
+                android:textColor="@color/gold"
                 app:backgroundTint="@color/black"></Button>
         </LinearLayout>
 

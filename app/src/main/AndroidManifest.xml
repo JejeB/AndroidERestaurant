@@ -13,8 +13,7 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".CategoryActivity"/>
         <activity android:name=".ZoomActivity"/>
-        <activity android:name=".PlatsActivity"/>
-        <activity android:name=".DessertsActivity"/>
+
         <activity android:name=".MainActivity">
 
             <intent-filter>

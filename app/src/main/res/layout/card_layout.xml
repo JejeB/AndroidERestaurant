@@ -33,7 +33,7 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/dynalight"
             android:text=" Le nom du plat "
-            android:textColor="#FFC107"
+            android:textColor="@color/gold"
             android:textSize="22sp"
             android:paddingLeft="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
             android:fontFamily="@font/dynalight"
             android:padding="10dp"
             android:text="ingredients1,ingredient2"
-            android:textColor="#FFC107"
+            android:textColor="@color/gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView_item"
             app:layout_constraintTop_toBottomOf="@+id/nom_plat" />
