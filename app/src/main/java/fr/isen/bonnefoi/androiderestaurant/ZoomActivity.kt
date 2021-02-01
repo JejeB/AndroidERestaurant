@@ -13,6 +13,7 @@ import fr.isen.bonnefoi.androiderestaurant.model.Item
 
 class ZoomActivity: AppCompatActivity() {
     private lateinit var numberPick :NumberPicker
+    private lateinit var plat:Item
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.zoom_layout)
@@ -26,10 +27,9 @@ class ZoomActivity: AppCompatActivity() {
         val mBundle = intent.extras
 
 
-
         if (mBundle != null) {
             mBundle.getSerializable("Desc").let { serializedItem ->
-                val plat = serializedItem as Item
+                plat = serializedItem as Item
                 platText.text = plat.name_fr
 
                 val mViewPagerAdapter = CaroselAdpatater(applicationContext, plat.images)
@@ -43,7 +43,10 @@ class ZoomActivity: AppCompatActivity() {
     }
 
     fun commandeCallBack(view: View?){
-        val mytoast = Toast.makeText(this,"${numberPick.value}",Toast.LENGTH_SHORT)
+        val basket = Basket.getBasket(this)
+        basket.addItem(BasketItem(plat, numberPick.value))
+        basket.save(this)
+        val mytoast = Toast.makeText(this,"${numberPick.value} ${plat.name_fr} ajouté(e)s au panier",Toast.LENGTH_SHORT)
         mytoast.show()
     }
 }
