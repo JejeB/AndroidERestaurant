@@ -66,6 +66,14 @@
                 android:text="Desserts"
                 android:textColor="@color/gold"
                 app:backgroundTint="@color/black"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dynalight"
+                android:onClick="PanierCallBack"
+                android:text="Panier"
+                android:textColor="@color/gold"
+                app:backgroundTint="@color/black"></Button>
         </LinearLayout>
 
     </LinearLayout>

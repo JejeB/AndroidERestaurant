@@ -34,4 +34,11 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
+    fun PanierCallBack(view: View?){
+
+        startActivity(
+                Intent(this, BasketActivity::class.java)
+        )
+    }
+
 }
